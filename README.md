@@ -37,6 +37,7 @@ python photomosaic.py --input target_image.jpg --pool "C:\path\to\frames" --outp
 ```
 Arguments
 `--input` : Path to your target image (e.g., your profile picture). Default is `data/input.jpg`.
+
 `--output` : Path and filename for the final generated mosaic. Default is `data/output.jpg`.
 `--pool` : Path to the folder containing your extracted movie frames. Default is `image_pool`. Can be a relative or absolute path.
 `--stride` : The base size of the grid tiles. A lower number (e.g., 10) creates a highly detailed mosaic with thousands of tiny frames. A higher number (e.g., 50) uses larger frames but reduces the overall detail of the target image.
