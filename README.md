@@ -12,9 +12,10 @@ Before running the scripts, ensure you have the following installed:
 2. **FFmpeg**: Required for extracting frames from your source video.
 3. **Python Libraries**: 
    Install the required libraries using pip:
-   ```bash
-   pip install opencv-python numpy
-   ```
+   
+```bash
+ pip install opencv-python numpy
+```
 
 ## Step 1: Extract Frames from Video
 
