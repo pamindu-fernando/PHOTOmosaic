@@ -38,7 +38,7 @@ Once your frames are extracted, use `PHOTOmosaic.py` to stitch them into your ta
 ### Basic Usage
 
 ```bash
-python PHOTOmosaic.py --input target_image.jpg --pool ./frames --output final_mosaic.jpg --stride 20
+python PHOTOmosaic.py --input target_image.jpg --pool "C:\path\to\frames" --output final_mosaic.jpg --stride 20
 ```
 
 ### Advanced Usage (High Resolution)
