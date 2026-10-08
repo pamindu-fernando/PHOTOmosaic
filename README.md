@@ -1,3 +1,4 @@
+
 # PHOTOmosaic Generator
 
 This repository provides a complete workflow to extract frames from a movie or video and use them to recreate a target image (such as a profile picture). 
@@ -36,14 +37,14 @@ mkdir frames_square
 ffmpeg -hwaccel cuda -i "Your_Movie_File.mkv" -vf "crop=ih:ih" -r 1 frames_square/frame_%05d.jpg
 ```
 
-## Step 2: Generate the Photomosaic
+## Step 2: Generate the PHOTOmosaic
 
-Once your frames are extracted, use `photomosaic.py` to stitch them into your target image. The script will automatically read the first image in your pool, calculate its aspect ratio, and apply it to the entire grid.
+Once your frames are extracted, use `PHOTOmosaic.py` to stitch them into your target image. The script will automatically read the first image in your pool, calculate its aspect ratio, and apply it to the entire grid.
 
 ### Basic Usage
 
 ```bash
-python photomosaic.py --input target_image.jpg --pool frames --output final_mosaic.jpg --stride 20
+python mosaic.py --input target_image.jpg --pool frames --output final_mosaic.jpg --stride 20
 ```
 
 ### Advanced Usage (High Resolution)
@@ -51,7 +52,7 @@ python photomosaic.py --input target_image.jpg --pool frames --output final_mosa
 If your output image looks too blurry when zooming in to see the individual movie frames, use the `--scale` parameter. This multiplies the overall canvas resolution while keeping your exact grid layout intact.
 
 ```bash
-python photomosaic.py --input target_image.jpg --pool "C:\path\to\frames" --output final_mosaic.jpg --stride 20 --scale 5
+python PHOTOmosaic.py --input target_image.jpg --pool "C:\path\to\frames" --output final_mosaic.jpg --stride 20 --scale 5
 ```
 
 ### Arguments
