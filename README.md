@@ -5,6 +5,8 @@ This repository provides a complete workflow to extract frames from a movie or v
 
 The included Python script has been upgraded to automatically detect the aspect ratio of your video frames (preventing squished or distorted tiles) and features a dynamic scaling argument to generate massive, high-resolution mosaics where individual frames remain crisp when zoomed in.
 
+https://github.com/pamindu-fernando/PHOTOmosaic/blob/aa55800a537b1bbe971d71ec268cdd7a7815a78f/PREVIEW.jpg
+
 ## Prerequisites
 
 Before running the scripts, ensure you have the following installed:
