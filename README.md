@@ -31,14 +31,6 @@ mkdir frames
 ffmpeg -hwaccel cuda -i "Your_Movie_File.mkv" -r 1 frames/frame_%05d.jpg
 ```
 
-**Optional: Square Frames**
-If you want your mosaic grid to be built using perfect squares instead of the movie's native widescreen aspect ratio, you can tell FFmpeg to crop the center of the video during extraction:
-
-```bash
-mkdir frames_square
-ffmpeg -hwaccel cuda -i "Your_Movie_File.mkv" -vf "crop=ih:ih" -r 1 frames_square/frame_%05d.jpg
-```
-
 ## Step 2: Generate the PHOTOmosaic
 
 Once your frames are extracted, use `PHOTOmosaic.py` to stitch them into your target image. The script will automatically read the first image in your pool, calculate its aspect ratio, and apply it to the entire grid.
